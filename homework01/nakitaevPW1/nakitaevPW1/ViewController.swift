@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
+    
     @IBOutlet var views: [UIView]!
     
     // MARK: Function activates on complited view load.
