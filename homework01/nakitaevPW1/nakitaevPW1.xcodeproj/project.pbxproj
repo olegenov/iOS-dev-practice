@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49880B762AB871E9003A9136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B752AB871E9003A9136 /* AppDelegate.swift */; };
+		49880B782AB871E9003A9136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B772AB871E9003A9136 /* SceneDelegate.swift */; };
+		49880B7A2AB871E9003A9136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B792AB871E9003A9136 /* ViewController.swift */; };
+		49880B7D2AB871E9003A9136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49880B7B2AB871E9003A9136 /* Main.storyboard */; };
+		49880B7F2AB871F0003A9136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49880B7E2AB871F0003A9136 /* Assets.xcassets */; };
+		49880B822AB871F0003A9136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49880B802AB871F0003A9136 /* LaunchScreen.storyboard */; };
+		49880B8D2AB871F0003A9136 /* nakitaevPW1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B8C2AB871F0003A9136 /* nakitaevPW1Tests.swift */; };
+		49880B972AB871F0003A9136 /* nakitaevPW1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B962AB871F0003A9136 /* nakitaevPW1UITests.swift */; };
+		49880B992AB871F0003A9136 /* nakitaevPW1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49880B982AB871F0003A9136 /* nakitaevPW1UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49880B892AB871F0003A9136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49880B6A2AB871E8003A9136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49880B712AB871E8003A9136;
+			remoteInfo = nakitaevPW1;
+		};
+		49880B932AB871F0003A9136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49880B6A2AB871E8003A9136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49880B712AB871E8003A9136;
+			remoteInfo = nakitaevPW1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49880B722AB871E9003A9136 /* nakitaevPW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nakitaevPW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49880B752AB871E9003A9136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49880B772AB871E9003A9136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49880B792AB871E9003A9136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49880B7C2AB871E9003A9136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49880B7E2AB871F0003A9136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49880B812AB871F0003A9136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49880B832AB871F0003A9136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49880B882AB871F0003A9136 /* nakitaevPW1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nakitaevPW1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49880B8C2AB871F0003A9136 /* nakitaevPW1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakitaevPW1Tests.swift; sourceTree = "<group>"; };
+		49880B922AB871F0003A9136 /* nakitaevPW1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nakitaevPW1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49880B962AB871F0003A9136 /* nakitaevPW1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakitaevPW1UITests.swift; sourceTree = "<group>"; };
+		49880B982AB871F0003A9136 /* nakitaevPW1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nakitaevPW1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49880B6F2AB871E8003A9136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B852AB871F0003A9136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B8F2AB871F0003A9136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49880B692AB871E8003A9136 = {
+			isa = PBXGroup;
+			children = (
+				49880B742AB871E9003A9136 /* nakitaevPW1 */,
+				49880B8B2AB871F0003A9136 /* nakitaevPW1Tests */,
+				49880B952AB871F0003A9136 /* nakitaevPW1UITests */,
+				49880B732AB871E9003A9136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49880B732AB871E9003A9136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49880B722AB871E9003A9136 /* nakitaevPW1.app */,
+				49880B882AB871F0003A9136 /* nakitaevPW1Tests.xctest */,
+				49880B922AB871F0003A9136 /* nakitaevPW1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49880B742AB871E9003A9136 /* nakitaevPW1 */ = {
+			isa = PBXGroup;
+			children = (
+				49880B752AB871E9003A9136 /* AppDelegate.swift */,
+				49880B772AB871E9003A9136 /* SceneDelegate.swift */,
+				49880B792AB871E9003A9136 /* ViewController.swift */,
+				49880B7B2AB871E9003A9136 /* Main.storyboard */,
+				49880B7E2AB871F0003A9136 /* Assets.xcassets */,
+				49880B802AB871F0003A9136 /* LaunchScreen.storyboard */,
+				49880B832AB871F0003A9136 /* Info.plist */,
+			);
+			path = nakitaevPW1;
+			sourceTree = "<group>";
+		};
+		49880B8B2AB871F0003A9136 /* nakitaevPW1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49880B8C2AB871F0003A9136 /* nakitaevPW1Tests.swift */,
+			);
+			path = nakitaevPW1Tests;
+			sourceTree = "<group>";
+		};
+		49880B952AB871F0003A9136 /* nakitaevPW1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				49880B962AB871F0003A9136 /* nakitaevPW1UITests.swift */,
+				49880B982AB871F0003A9136 /* nakitaevPW1UITestsLaunchTests.swift */,
+			);
+			path = nakitaevPW1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49880B712AB871E8003A9136 /* nakitaevPW1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49880B9C2AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1" */;
+			buildPhases = (
+				49880B6E2AB871E8003A9136 /* Sources */,
+				49880B6F2AB871E8003A9136 /* Frameworks */,
+				49880B702AB871E8003A9136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nakitaevPW1;
+			productName = nakitaevPW1;
+			productReference = 49880B722AB871E9003A9136 /* nakitaevPW1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49880B872AB871F0003A9136 /* nakitaevPW1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49880B9F2AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1Tests" */;
+			buildPhases = (
+				49880B842AB871F0003A9136 /* Sources */,
+				49880B852AB871F0003A9136 /* Frameworks */,
+				49880B862AB871F0003A9136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49880B8A2AB871F0003A9136 /* PBXTargetDependency */,
+			);
+			name = nakitaevPW1Tests;
+			productName = nakitaevPW1Tests;
+			productReference = 49880B882AB871F0003A9136 /* nakitaevPW1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49880B912AB871F0003A9136 /* nakitaevPW1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49880BA22AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1UITests" */;
+			buildPhases = (
+				49880B8E2AB871F0003A9136 /* Sources */,
+				49880B8F2AB871F0003A9136 /* Frameworks */,
+				49880B902AB871F0003A9136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49880B942AB871F0003A9136 /* PBXTargetDependency */,
+			);
+			name = nakitaevPW1UITests;
+			productName = nakitaevPW1UITests;
+			productReference = 49880B922AB871F0003A9136 /* nakitaevPW1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49880B6A2AB871E8003A9136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					49880B712AB871E8003A9136 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					49880B872AB871F0003A9136 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 49880B712AB871E8003A9136;
+					};
+					49880B912AB871F0003A9136 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 49880B712AB871E8003A9136;
+					};
+				};
+			};
+			buildConfigurationList = 49880B6D2AB871E8003A9136 /* Build configuration list for PBXProject "nakitaevPW1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49880B692AB871E8003A9136;
+			productRefGroup = 49880B732AB871E9003A9136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49880B712AB871E8003A9136 /* nakitaevPW1 */,
+				49880B872AB871F0003A9136 /* nakitaevPW1Tests */,
+				49880B912AB871F0003A9136 /* nakitaevPW1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49880B702AB871E8003A9136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49880B822AB871F0003A9136 /* LaunchScreen.storyboard in Resources */,
+				49880B7F2AB871F0003A9136 /* Assets.xcassets in Resources */,
+				49880B7D2AB871E9003A9136 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B862AB871F0003A9136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B902AB871F0003A9136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49880B6E2AB871E8003A9136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49880B7A2AB871E9003A9136 /* ViewController.swift in Sources */,
+				49880B762AB871E9003A9136 /* AppDelegate.swift in Sources */,
+				49880B782AB871E9003A9136 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B842AB871F0003A9136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49880B8D2AB871F0003A9136 /* nakitaevPW1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49880B8E2AB871F0003A9136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49880B992AB871F0003A9136 /* nakitaevPW1UITestsLaunchTests.swift in Sources */,
+				49880B972AB871F0003A9136 /* nakitaevPW1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49880B8A2AB871F0003A9136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49880B712AB871E8003A9136 /* nakitaevPW1 */;
+			targetProxy = 49880B892AB871F0003A9136 /* PBXContainerItemProxy */;
+		};
+		49880B942AB871F0003A9136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49880B712AB871E8003A9136 /* nakitaevPW1 */;
+			targetProxy = 49880B932AB871F0003A9136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49880B7B2AB871E9003A9136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49880B7C2AB871E9003A9136 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49880B802AB871F0003A9136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49880B812AB871F0003A9136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49880B9A2AB871F0003A9136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49880B9B2AB871F0003A9136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49880B9D2AB871F0003A9136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nakitaevPW1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49880B9E2AB871F0003A9136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nakitaevPW1/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49880BA02AB871F0003A9136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nakitaevPW1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nakitaevPW1";
+			};
+			name = Debug;
+		};
+		49880BA12AB871F0003A9136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nakitaevPW1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nakitaevPW1";
+			};
+			name = Release;
+		};
+		49880BA32AB871F0003A9136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nakitaevPW1;
+			};
+			name = Debug;
+		};
+		49880BA42AB871F0003A9136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-234.nakitaevPW1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nakitaevPW1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49880B6D2AB871E8003A9136 /* Build configuration list for PBXProject "nakitaevPW1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49880B9A2AB871F0003A9136 /* Debug */,
+				49880B9B2AB871F0003A9136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49880B9C2AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49880B9D2AB871F0003A9136 /* Debug */,
+				49880B9E2AB871F0003A9136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49880B9F2AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49880BA02AB871F0003A9136 /* Debug */,
+				49880BA12AB871F0003A9136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49880BA22AB871F0003A9136 /* Build configuration list for PBXNativeTarget "nakitaevPW1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49880BA32AB871F0003A9136 /* Debug */,
+				49880BA42AB871F0003A9136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49880B6A2AB871E8003A9136 /* Project object */;
+}
