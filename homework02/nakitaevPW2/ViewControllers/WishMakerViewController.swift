@@ -40,7 +40,7 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         static let slidersStackActionButtonActiveText: String = "Show background settings"
         static let slidersStackActionButtonText: String = "Hide background settings"
         static let slidersStackActionButtonLeftOffset: CGFloat = 20
-        static let slidersStackActionButtonBottomOffset: CGFloat = -40
+        static let slidersStackActionButtonBottomOffset: CGFloat = -10
         
         static let colorInputFieldLeftPadding: CGFloat = 10
         static let colorInputFieldHeight: CGFloat = 40
@@ -55,12 +55,12 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         static let colorInputBottomOffset: CGFloat = -10
         static let colorInputLeftOffset: CGFloat = 20
         
-        static let colorSubmitText = "Submit"
+        static let colorSubmitText: String = "Submit"
         static let colorSubmitBorderWidth: CGFloat = 2
         static let colorSubmitBorderRadius: CGFloat = 20
         static let colorSubmitBorderColor: UIColor = UIColor("#C6C6C6")
         
-        static let colorRandomText = "Random"
+        static let colorRandomText: String = "Random"
         static let colorRandomBorderWidth: CGFloat = 2
         static let colorRandomBorderRadius: CGFloat = 20
         static let colorRandomBorderColor: UIColor = UIColor("#C6C6C6")
@@ -69,6 +69,17 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         static let colorPickerBorderWidth: CGFloat = 2
         static let colorPickerBorderRadius: CGFloat = 20
         static let colorPickerBorderColor: UIColor = UIColor("#C6C6C6")
+        
+        static let addWishButtonText: String = "My wishes"
+        static let addWishButtonFontSize: CGFloat = 20
+        static let addWishButtonTextColor: UIColor = UIColor("#FFFFFF")
+        static let addWishButtonHeight: CGFloat = 54
+        static let addWishButtonBottomOffest: CGFloat = -40
+        static let addWishButtonLeftOffset: CGFloat = 20
+        static let addWishButtonRightOffset: CGFloat = -20
+        static let addWishButtonBorderRadius: CGFloat = 20
+        static let addWishButtonBorderWidth: CGFloat = 2
+        static let addWishButtonBorderColor: UIColor = UIColor("#C6C6C6")
     }
     
     private var titleView: UILabel = UILabel()
@@ -77,6 +88,7 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
     private var slidersStackActionButtonView: UIButton = UIButton()
     private var colorInputFieldView: UITextField = UITextField()
     private var colorInputView: UIStackView = UIStackView()
+    private let addWishButton: UIButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +101,7 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         
         configureTitle()
         configureDescription()
+        configureAddWishButton()
         configureHideSlidersButton()
         configureSliders()
         configureColorInput()
@@ -180,7 +193,7 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.slidersStackActionButtonBottomOffset),
+            button.bottomAnchor.constraint(equalTo: addWishButton.topAnchor, constant: Constants.slidersStackActionButtonBottomOffset),
         ])
     }
     
@@ -204,7 +217,6 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         inputField.layer.cornerRadius = Constants.colorInputFieldBorderRadius
         inputField.layer.borderWidth = Constants.colorInputFieldBorderWidth
         inputField.layer.borderColor = Constants.colorInputFieldBorderColor.cgColor
-        inputField.heightAnchor.constraint(equalToConstant: Constants.colorInputFieldHeight).isActive = true
         
         inputField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: Constants.colorInputFieldLeftPadding, height: inputField.frame.height))
         inputField.leftViewMode = .always
@@ -241,9 +253,37 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         view.addSubview(input)
         
         NSLayoutConstraint.activate([
+            inputField.heightAnchor.constraint(equalToConstant: Constants.colorInputFieldHeight),
             input.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             input.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.colorInputLeftOffset),
             input.bottomAnchor.constraint(equalTo: slidersStackView.topAnchor, constant: Constants.colorInputBottomOffset),
+        ])
+    }
+    
+    // MARK: Configurates AddWish button.
+    private func configureAddWishButton() {
+        let button: UIButton = addWishButton
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.setTitle(Constants.addWishButtonText, for: .normal)
+        button.setTitleColor(Constants.addWishButtonTextColor, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: Constants.addWishButtonFontSize)
+        
+        button.layer.cornerRadius = Constants.addWishButtonBorderRadius
+        button.layer.borderWidth = Constants.addWishButtonBorderWidth
+        button.layer.borderColor = Constants.addWishButtonBorderColor.cgColor
+        
+        button.addTarget(self, action: #selector(addWishButtonTapped), for: .touchUpInside)
+        
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.addWishButtonLeftOffset),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.addWishButtonRightOffset),
+            button.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Constants.addWishButtonBottomOffest),
+            button.heightAnchor.constraint(equalToConstant: Constants.addWishButtonHeight)
         ])
     }
     
@@ -274,6 +314,10 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
     // MARK: Randomizes background color.
     @objc private func randomColorButtonTapped() {
         updateBackgroundColor(UIColor.getRandom())
+    }
+    
+    // MARK:
+    @objc private func addWishButtonTapped() {
     }
     
     // MARK: Opens color picking menu.
