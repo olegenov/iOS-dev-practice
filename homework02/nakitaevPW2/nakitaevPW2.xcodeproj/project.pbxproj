@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D91A5DB2B77255B009B9538 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A5DA2B77255B009B9538 /* WishStoringViewController.swift */; };
+		0DCE56FE2B956B0100609C23 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE56FD2B956B0100609C23 /* WrittenWishCell.swift */; };
+		0DCE57052B95D76B00609C23 /* UIViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE57042B95D76B00609C23 /* UIViewPin.swift */; };
+		0DCE57072B9785D300609C23 /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE57062B9785D300609C23 /* AddWishCell.swift */; };
 		0DD02EF52B737BF700D94E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD02EF42B737BF700D94E33 /* AppDelegate.swift */; };
 		0DD02EF72B737BF700D94E33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD02EF62B737BF700D94E33 /* SceneDelegate.swift */; };
 		0DD02EFE2B737BF800D94E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD02EFD2B737BF800D94E33 /* Assets.xcassets */; };
@@ -14,9 +18,15 @@
 		0DD02F0A2B737C6100D94E33 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD02F092B737C6100D94E33 /* CustomSlider.swift */; };
 		0DD02F0D2B737D7600D94E33 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD02F0C2B737D7600D94E33 /* UIColorExtension.swift */; };
 		0DD02F102B737E0300D94E33 /* WishMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD02F0F2B737E0300D94E33 /* WishMakerViewController.swift */; };
+		0DD7A33C2BA902E500E72344 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7A33A2BA902E500E72344 /* CoreData.xcdatamodeld */; };
+		0DD7A3482BA9045700E72344 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7A3472BA9045700E72344 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D91A5DA2B77255B009B9538 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
+		0DCE56FD2B956B0100609C23 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
+		0DCE57042B95D76B00609C23 /* UIViewPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewPin.swift; sourceTree = "<group>"; };
+		0DCE57062B9785D300609C23 /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
 		0DD02EF12B737BF700D94E33 /* nakitaevPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nakitaevPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD02EF42B737BF700D94E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DD02EF62B737BF700D94E33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +37,8 @@
 		0DD02F0C2B737D7600D94E33 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		0DD02F0F2B737E0300D94E33 /* WishMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewController.swift; sourceTree = "<group>"; };
 		0DD02F112B73805D00D94E33 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0DD7A33B2BA902E500E72344 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		0DD7A3472BA9045700E72344 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,10 @@
 		0DD02EE82B737BF700D94E33 = {
 			isa = PBXGroup;
 			children = (
+				0DD7A3432BA9043000E72344 /* Managers */,
+				0DD7A3422BA903F700E72344 /* Entities */,
+				0DD7A33A2BA902E500E72344 /* CoreData.xcdatamodeld */,
+				0DCE57042B95D76B00609C23 /* UIViewPin.swift */,
 				0DD02F112B73805D00D94E33 /* README.md */,
 				0DD02F0E2B737DD900D94E33 /* ViewControllers */,
 				0DD02F0B2B737D6100D94E33 /* Extensions */,
@@ -76,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				0DD02F092B737C6100D94E33 /* CustomSlider.swift */,
+				0DCE56FD2B956B0100609C23 /* WrittenWishCell.swift */,
+				0DCE57062B9785D300609C23 /* AddWishCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -92,8 +110,24 @@
 			isa = PBXGroup;
 			children = (
 				0DD02F0F2B737E0300D94E33 /* WishMakerViewController.swift */,
+				0D91A5DA2B77255B009B9538 /* WishStoringViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0DD7A3422BA903F700E72344 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0DD7A3432BA9043000E72344 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0DD7A3472BA9045700E72344 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +146,8 @@
 			dependencies = (
 			);
 			name = nakitaevPW2;
+			packageProductDependencies = (
+			);
 			productName = nakitaevPW2;
 			productReference = 0DD02EF12B737BF700D94E33 /* nakitaevPW2.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 0DD02EE82B737BF700D94E33;
+			packageReferences = (
+				0DCE56FF2B9576AD00609C23 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = 0DD02EF22B737BF700D94E33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,11 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD7A3482BA9045700E72344 /* CoreDataManager.swift in Sources */,
+				0DCE56FE2B956B0100609C23 /* WrittenWishCell.swift in Sources */,
+				0D91A5DB2B77255B009B9538 /* WishStoringViewController.swift in Sources */,
+				0DD7A33C2BA902E500E72344 /* CoreData.xcdatamodeld in Sources */,
+				0DCE57052B95D76B00609C23 /* UIViewPin.swift in Sources */,
 				0DD02EF52B737BF700D94E33 /* AppDelegate.swift in Sources */,
 				0DD02F102B737E0300D94E33 /* WishMakerViewController.swift in Sources */,
 				0DD02F0D2B737D7600D94E33 /* UIColorExtension.swift in Sources */,
 				0DD02EF72B737BF700D94E33 /* SceneDelegate.swift in Sources */,
 				0DD02F0A2B737C6100D94E33 /* CustomSlider.swift in Sources */,
+				0DCE57072B9785D300609C23 /* AddWishCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +428,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0DCE56FF2B9576AD00609C23 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		0DD7A33A2BA902E500E72344 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0DD7A33B2BA902E500E72344 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 0DD7A33B2BA902E500E72344 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0DD02EE92B737BF700D94E33 /* Project object */;
 }

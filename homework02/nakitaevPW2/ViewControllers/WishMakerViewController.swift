@@ -316,8 +316,9 @@ final class WishMakerViewController: UIViewController, UIColorPickerViewControll
         updateBackgroundColor(UIColor.getRandom())
     }
     
-    // MARK:
+    // MARK: Opens Wish View
     @objc private func addWishButtonTapped() {
+        present(WishStoringViewController(), animated: true)
     }
     
     // MARK: Opens color picking menu.
