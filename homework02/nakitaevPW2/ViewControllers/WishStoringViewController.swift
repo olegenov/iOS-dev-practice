@@ -22,6 +22,10 @@ final class WishStoringViewController: UIViewController {
         static let sectionGap: CGFloat = 5
         
         static let wishesKey: String = "userWishes"
+        static let editWishText: String = "Edit Wish"
+        static let enterWishText: String = "Enter your wish"
+        static let cancelString: String = "Cancel"
+        static let saveString: String = "Save"
     }
     
     private let table: UITableView = UITableView(frame: .zero)
@@ -66,29 +70,28 @@ final class WishStoringViewController: UIViewController {
     public func deleteWishAction(id: Int16) {
         guard let index = wishArray.firstIndex(where: { $0.id == id }) else { return }
         
-        if let deletedWish = CoreDataManager.shared.deleteWish(with: Int16(id)) {
+        if CoreDataManager.shared.deleteWish(with: Int16(id)) != nil {
             wishArray.remove(at: index)
-            print("Deleted wish: \(deletedWish)")
             
             table.reloadData()
         }
     }
     
     public func editWishAction(id: Int16) {
-        let alertController = UIAlertController(title: "Edit Wish", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: Constants.editWishText, message: nil, preferredStyle: .alert)
         guard let index = wishArray.firstIndex(where: { $0.id == id }) else {
             return
         }
         
         alertController.addTextField { textField in
-            textField.placeholder = "Enter your wish"
+            textField.placeholder = Constants.enterWishText
             textField.text = self.wishArray[index].text
             textField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        let cancelAction = UIAlertAction(title: Constants.cancelString, style: .cancel)
         
-        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+        let saveAction = UIAlertAction(title: Constants.saveString, style: .default) { _ in
             if let textField = alertController.textFields?.first {
                 if let updatedWish = CoreDataManager.shared.updateWish(with: Int16(id), newText: textField.text!) {
                     self.wishArray[index] = updatedWish
